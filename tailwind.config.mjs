@@ -8,14 +8,19 @@ export default {
 				"heading": ['"Poppins"', "sans-serif"],
 				"body": ['"Open Sans"', "serif"],
 			},
+			fontSize: {
+				"x11": "0.688rem",
+
+			},
 
 			colors: {
-				"p-pink": "hsl(322, 100%, 66%)",
-				"p-light-pink": "hsl(321, 100 %, 78 %)",
-				"p-light-red": "hsl(0, 100 %, 63 %)",
+				"new": "hsl(228, 45%, 44%)",
+				"pink": "hsl(322, 100%, 66%)",
+				"light-pink": "hsl(321, 100%, 78%)",
+				"light-red": "hsl(0, 100%, 63%)",
 
-				"n-very-dark-cyan": "hsl(192, 100 %, 9 %)",
-				"n-very-pale-blue": "hsl(207, 100 %, 98 %)"
+				"n-very-dark-cyan": "hsl(192, 100%, 9%)",
+				"n-very-pale-blue": "hsl(207, 100%, 98%)"
 			}
 		},
 	},
