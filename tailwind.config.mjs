@@ -8,10 +8,7 @@ export default {
 				"heading": ['"Poppins"', "sans-serif"],
 				"body": ['"Open Sans"', "serif"],
 			},
-			fontSize: {
-				"x11": "0.688rem",
 
-			},
 
 			colors: {
 				"new": "hsl(228, 45%, 44%)",
