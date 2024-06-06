@@ -27,7 +27,7 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 
 		<img
 			class="my-[7rem] w-auto h-auto mx-auto px-12"
-			src="//public/images/screen-mockups.svg"
+			src="../../public/images/screen-mockups.svg"
 			alt="screen-mockups "
 		/>
 
@@ -227,7 +227,7 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 				>
 					<img
 						class="w-auto h-8 mr-auto md:p-0"
-						src="/public/images/logo-white.svg"
+						src="../public/images/logo-white.svg"
 						alt=""
 					/>
 
@@ -250,23 +250,27 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 							<a href=""> example@huddle.com</a>
 						</div>
 					</div>
-					<section class="bg-n-very-dark-cyan">
+					<section class="bg-n-very-dark-cyan md:flex md:flex-wrap">
 						<SocialPill href="">
 							<FacebookIcon class="size-6 md:size-6" />
+						</SocialPill>
+						<SocialPill href="">
 							<InstagramIcon class="size-6 md:size-6" />
+						</SocialPill>
+						<SocialPill href="">
 							<TwitterIcon class="size-6 md:size-6" />
 						</SocialPill>
 					</section>
 				</section>
 			</div>
+			<p class="attribution font-normal text-sm px-2">
+				Challenge by <a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank">Frontend Mentor</a
+				>. Coded by <a href="https://github.com/justcoddev" target="_blank"
+					><strong>justcoddev</strong></a
+				>.
+			</p>
 		</footer>
-		<p class="attribution font-normal text-sm px-2">
-			Challenge by <a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank">Frontend Mentor</a
-			>. Coded by <a href="https://github.com/justcoddev" target="_blank"
-				><strong>justcoddev</strong></a
-			>.
-		</p>
 	</main>
 </Layout>
