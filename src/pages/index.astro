@@ -73,17 +73,21 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 				src="/public/images/bg-section-top-desktop-1.svg"
 				alt=""
 			/>
-			<div class="bg-n-very-pale-blue pb-12 flex flex-col">
+			<div class="bg-n-very-pale-blue pb-12 flex flex-col md:flex-row">
 				<img
-					class="bg-n-very-pale-blue w-auto h-auto mx-auto px-12 pt-28"
+					class="bg-n-very-pale-blue w-auto h-auto mx-auto px-12 pt-28 md:px-auto md:pt-auto md:pt-0 md:w-[50%] order-2"
 					src="/public/images/illustration-grow-together.svg"
 					alt=""
 				/>
 
-				<div>
-					<h2 class="font-heading text-xl px-14 pt-32">Grow Together</h2>
+				<div
+					class="order-1 md:py-auto md:flex md:flex-col md:justify-center md:px-0 md:text-left md:gap-1"
+				>
+					<h2 class="font-heading text-xl px-14 pt-32 md:pt-0">
+						Grow Together
+					</h2>
 
-					<p class="text-xs text-wrap font-medium px-14 py-5">
+					<p class="text-xs text-wrap font-medium px-14 py-5 md:px-0 md:pl-14">
 						Generate meaningful discussions with your audience and build a
 						strong, loyal community. Think of the insightful conversations you
 						miss out on with a feedback form.
@@ -103,37 +107,53 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 		</section>
 
 		<section>
-			<div class="flex flex-col">
+			<div class="pb-12 flex flex-col md:flex-row">
 				<img
-					class="w-auto h-auto mx-auto px-12 pt-28"
+					class="w-auto h-auto mx-auto px-12 pt-28 md:px-auto md:pt-auto md:pt-0 md:w-[50%] order-1"
 					src="/public/images/illustration-flowing-conversation.svg"
 					alt=""
 				/>
-				<h2 class="font-heading text-xl px-14 pt-32">Flowing Conversations</h2>
 
-				<p class="text-xs font-medium px-12 py-5">
-					You wouldn't paginate a conversation in real life, so why do it
-					online? Our threads have just-in-time loading for a more natural flow.
-				</p>
+				<div
+					class="order-2 md:py-auto md:flex md:flex-col md:justify-center md:px-0 md:text-left md:gap-1"
+				>
+					<h2 class="font-heading text-xl px-14 pt-32 md:pt-0 md:px-0">
+						Flowing Conversations
+					</h2>
+
+					<p class="text-xs text-wrap font-medium px-14 py-5 md:px-0 md:pr-14">
+						You wouldn't paginate a conversation in real life, so why do it
+						online? Our threads have just-in-time loading for a more natural
+						flow.
+					</p>
+				</div>
 			</div>
 		</section>
 
 		<section>
 			<img
-				class="w-[100%] h-auto"
+				class="w-[100%] h-auto md:hidden"
 				src="/public/images/bg-section-top-mobile-2.svg"
 				alt=""
 			/>
-			<div class="bg-n-very-pale-blue pb-12 flex flex-col">
+			<img
+				class="w-[100%] h-auto hidden md:block"
+				src="/public/images/bg-section-top-desktop-2.svg"
+				alt=""
+			/>
+			<div class="bg-n-very-pale-blue pb-12 flex flex-col md:flex-row">
 				<img
-					class="bg-n-very-pale-blue w-auto h-auto mx-auto px-12 pt-28"
+					class="bg-n-very-pale-blue w-auto h-auto mx-auto px-12 pt-28 md:px-auto md:pt-auto md:pt-0 md:w-[50%] order-2"
 					src="/public/images/illustration-your-users.svg"
 					alt=""
 				/>
-				<div>
-					<h2 class="font-heading text-xl px-14 pt-32">Your Users</h2>
 
-					<p class="text-xs font-medium px-12 py-5">
+				<div
+					class="order-1 md:py-auto md:flex md:flex-col md:justify-center md:px-0 md:text-left md:gap-1"
+				>
+					<h2 class="font-heading text-xl px-14 pt-32 md:pt-0">Your Users</h2>
+
+					<p class="text-xs text-wrap font-medium px-14 py-5 md:px-0 md:pl-14">
 						It takes no time at all to integrate Huddle with your app's
 						authentication solution. This means, once signed in to your app,
 						your users can start chatting immediately.
@@ -141,8 +161,13 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 				</div>
 			</div>
 			<img
-				class="w-[100%] h-auto"
+				class="w-[100%] h-auto md:hidden"
 				src="/public/images/bg-section-bottom-mobile-2.svg"
+				alt=""
+			/>
+			<img
+				class="w-[100%] h-auto hidden md:block"
+				src="/public/images/bg-section-bottom-desktop-2.svg"
 				alt=""
 			/>
 		</section>
