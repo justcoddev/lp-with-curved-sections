@@ -10,13 +10,13 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 <Layout title="LP with curved sections">
 	<main>
 		<h1
-			class="font-heading text-xl text-n-very-dark-cyan px-14 pt-32 md:text-2xl"
+			class="font-heading text-xl text-n-very-dark-cyan px-14 pt-32 lg:text-2xl"
 		>
 			Build The Community Your Fans Will Love
 		</h1>
 
 		<p
-			class="text-xs text-wrap font-medium px-14 py-5 text-n-very-dark-cyan md:px-48"
+			class="text-xs text-wrap font-medium px-14 py-5 text-n-very-dark-cyan lg:px-48"
 		>
 			Huddle re-imagines the way we build communities. You have a voice, but so
 			does your audience. Create connections with your users as you engage in
@@ -180,12 +180,14 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 
 		<footer>
 			<img
-				class="w-[100%] h-auto"
+				class="w-[100%] h-auto lg:w-screen lg:h-full lg:px-0 lg:py-0"
 				src="/public/images/bg-footer-top-mobile.svg"
 				alt=""
 			/>
-			<div class="bg-n-very-dark-cyan flex flex-col">
-				<section>
+			<div
+				class="flex flex-col md:flex-row bg-n-very-dark-cyan lg:px-0 lg:py-0"
+			>
+				<section class="bg-n-very-dark-cyan md:order-2">
 					<h2
 						class="uppercase text-xl font-semibold px-10 text-n-very-pale-blue pt-20 text-left"
 					>
@@ -197,8 +199,8 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 						To recieve tips on how to grow your community, sign up to our weekly
 						newsletter. We’ll never send you spam or pass on your email address
 					</p>
-					<form>
-						<div class="pl-10 pr-8 h-12">
+					<form class="md:flex md:flex-row">
+						<div class="pl-10 pr-8 h-12 md:pr-0 md:my-auto">
 							<input
 								class="w-full h-14 rounded-md text-sm"
 								type="email"
@@ -220,14 +222,18 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 					</form>
 				</section>
 
-				<section class="mt-32 px-10">
+				<section
+					class="bg-n-very-dark-cyan mt-32 px-10 md:order-1 md:mt-0 md:my-auto"
+				>
 					<img
-						class="w-auto h-8 mr-auto"
+						class="w-auto h-8 mr-auto md:p-0"
 						src="/public/images/logo-white.svg"
 						alt=""
 					/>
 
-					<p class="text-sm font-medium py-5 text-n-very-pale-blue text-left">
+					<p
+						class="text-sm font-medium py-5 text-n-very-pale-blue text-left md:text-wrap md:pr-32"
+					>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
 						nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
 					</p>
@@ -244,15 +250,15 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 							<a href=""> example@huddle.com</a>
 						</div>
 					</div>
+					<section class="bg-n-very-dark-cyan">
+						<SocialPill href="">
+							<FacebookIcon class="size-6 md:size-6" />
+							<InstagramIcon class="size-6 md:size-6" />
+							<TwitterIcon class="size-6 md:size-6" />
+						</SocialPill>
+					</section>
 				</section>
 			</div>
-			<section class="bg-n-very-dark-cyan">
-				<SocialPill href="">
-					<FacebookIcon class="size-6 md:size-6" />
-					<InstagramIcon class="size-6 md:size-6" />
-					<TwitterIcon class="size-6 md:size-6" />
-				</SocialPill>
-			</section>
 		</footer>
 		<p class="attribution font-normal text-sm px-2">
 			Challenge by <a
