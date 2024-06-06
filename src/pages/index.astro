@@ -1,15 +1,19 @@
 ---
+import SocialPill from "@/components/SocialPill.astro";
 import Layout from "../layouts/Layout.astro";
 import CtaButton from "@/components/Cta-button.astro";
+import FacebookIcon from "@/icons/FacebookIcon.astro";
+import InstagramIcon from "@/icons/InstagramIcon.astro";
+import TwitterIcon from "@/icons/TwitterIcon.astro";
 ---
 
 <Layout title="LP with curved sections">
 	<main>
-		<h1 class="font-heading text-[32px] px-14 pt-32">
+		<h1 class="font-heading text-xl text-n-very-dark-cyan px-14 pt-32">
 			Build The Community Your Fans Will Love
 		</h1>
 
-		<p class="text-lg font-medium px-12 py-5">
+		<p class="text-xs text-wrap font-medium px-14 py-5">
 			Huddle re-imagines the way we build communities. You have a voice, but so
 			does your audience. Create connections with your users as you engage in
 			genuine discussion.
@@ -23,26 +27,27 @@ import CtaButton from "@/components/Cta-button.astro";
 			alt="screen-mockups "
 		/>
 
-		<div class="mt-[10rem]">
-			<div class="mx-32">
-				<img class="pl-5" src="/public/images/icon-communities.svg" alt="" />
-			</div>
-			<h2 class="text-[5rem] font-bold text-n-very-dark-cyan">1.4k+</h2>
-			<p class="text-lg font-semibold text-n-very-dark-cyan/50">
-				Communities Formed
-			</p>
-		</div>
-		<div class="mt-[7rem]">
-			<div class="mx-32">
+		<div class="flex flex-col text-center mt-[7rem]">
+			<div class="text-left pb-3 ml-[6.5rem]">
 				<img
-					class="pl-5 w-auto h-7"
-					src="/public/images/icon-messages.svg"
+					class="w-auto h-5"
+					src="/public/images/icon-communities.svg"
 					alt=""
 				/>
 			</div>
-			<h2 class="text-[5rem] font-bold text-n-very-dark-cyan">2.7m+</h2>
-			<p class="text-lg font-semibold text-n-very-dark-cyan/50">Messages</p>
-			<p class="text-lg font-semibold text-n-very-dark-cyan/50">Sent</p>
+			<h2 class="text-6xl font-bold text-n-very-dark-cyan">1.4k+</h2>
+			<p class="text-sm font-semibold text-n-very-dark-cyan/50">
+				Communities Formed
+			</p>
+		</div>
+
+		<div class="flex flex-col text-center mt-[7rem]">
+			<div class="text-left pb-3 ml-[6.5rem]">
+				<img class="w-auto h-5" src="/public/images/icon-messages.svg" alt="" />
+			</div>
+			<h2 class="text-6xl font-bold text-n-very-dark-cyan">2.7m+</h2>
+			<p class="text-sm font-semibold text-n-very-dark-cyan/50">Messages</p>
+			<p class="text-sm font-semibold text-n-very-dark-cyan/50">Sent</p>
 		</div>
 
 		<section>
@@ -57,9 +62,9 @@ import CtaButton from "@/components/Cta-button.astro";
 					src="/public/images/illustration-grow-together.svg"
 					alt=""
 				/>
-				<h2 class="font-heading text-3xl px-14 pt-32">Grow Together</h2>
+				<h2 class="font-heading text-xl px-14 pt-32">Grow Together</h2>
 
-				<p class="text-n-very-dark-cyan text-lg font-medium px-12 py-5">
+				<p class="text-xs text-wrap font-medium px-14 py-5">
 					Generate meaningful discussions with your audience and build a strong,
 					loyal community. Think of the insightful conversations you miss out on
 					with a feedback form.
@@ -77,11 +82,9 @@ import CtaButton from "@/components/Cta-button.astro";
 				src="/public/images/illustration-flowing-conversation.svg"
 				alt=""
 			/>
-			<h2 class="font-heading text-2xl px-14 pt-32">Flowing Conversations</h2>
+			<h2 class="font-heading text-xl px-14 pt-32">Flowing Conversations</h2>
 
-			<p
-				class="text-n-very-dark-cyan text-lg font-medium px-10 py-5 text-pretty"
-			>
+			<p class="text-xs font-medium px-12 py-5">
 				You wouldn't paginate a conversation in real life, so why do it online?
 				Our threads have just-in-time loading for a more natural flow.
 			</p>
@@ -99,9 +102,9 @@ import CtaButton from "@/components/Cta-button.astro";
 					src="/public/images/illustration-your-users.svg"
 					alt=""
 				/>
-				<h2 class="font-heading text-3xl px-14 pt-32">Your Users</h2>
+				<h2 class="font-heading text-xl px-14 pt-32">Your Users</h2>
 
-				<p class="text-n-very-dark-cyan text-lg font-medium px-10 py-5">
+				<p class="text-xs font-medium px-12 py-5">
 					It takes no time at all to integrate Huddle with your app's
 					authentication solution. This means, once signed in to your app, your
 					users can start chatting immediately.
@@ -114,7 +117,7 @@ import CtaButton from "@/components/Cta-button.astro";
 			/>
 		</section>
 
-		<h2 class="font-heading text-[32px] px-14 pt-7 pb-7">
+		<h2 class="font-heading text-xl px-14 pt-7 pb-7">
 			Ready To Build Your Community?
 		</h2>
 
@@ -129,23 +132,23 @@ import CtaButton from "@/components/Cta-button.astro";
 			<div class="bg-n-very-dark-cyan">
 				<section>
 					<h2
-						class="uppercase text-2xl font-semibold px-10 text-n-very-pale-blue pt-20 text-left"
+						class="uppercase text-xl font-semibold px-10 text-n-very-pale-blue pt-20 text-left"
 					>
 						Newsletter
 					</h2>
 					<p
-						class="text-xl font-medium px-8 text-wrap py-5 text-n-very-pale-blue text-left"
+						class="text-sm font-medium pl-10 pr-8 py-5 text-n-very-pale-blue text-left"
 					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-						nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+						To recieve tips on how to grow your community, sign up to our weekly
+						newsletter. We’ll never send you spam or pass on your email address
 					</p>
 					<form>
-						<div class="px-8 h-12">
+						<div class="pl-10 pr-8 h-12">
 							<input class="w-full h-14 rounded-md" type="email" />
 						</div>
 						<div class="mt-7 text-right px-8">
 							<a
-								class="bg-pink px-12 py-3 text-lg font-semibold text-n-very-pale-blue rounded-md shadow-xl"
+								class="bg-pink px-12 py-3 text-sm font-semibold text-n-very-pale-blue rounded-md shadow-xl"
 							>
 								Subscribe
 							</a>
@@ -153,31 +156,36 @@ import CtaButton from "@/components/Cta-button.astro";
 					</form>
 				</section>
 
-				<section class="mt-32">
+				<section class="mt-32 px-10">
 					<img
-						class="w-auto h-12 mr-auto px-12"
+						class="w-auto h-8 mr-auto"
 						src="/public/images/logo-white.svg"
 						alt=""
 					/>
 
-					<p
-						class="text-xl font-medium px-8 text-wrap py-5 text-n-very-pale-blue text-left"
-					>
+					<p class="text-sm font-medium py-5 text-n-very-pale-blue text-left">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
 						nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
 					</p>
 				</section>
 				<section
-					class="px-10 mt-7 pb-10 flex flex-col gap-7 text-n-very-pale-blue text-lg font-medium"
+					class="px-10 mt-7 pb-10 flex flex-col gap-7 text-n-very-pale-blue text-sm font-medium"
 				>
 					<div class="flex gap-6 items-center content-center">
-						<img class="size-6" src="/public/images/icon-phone.svg" alt="" />
+						<img class="size-4" src="/public/images/icon-phone.svg" alt="" />
 						<a href="">Phone: +1-543-123-4567</a>
 					</div>
 					<div class="flex gap-6 items-center content-center">
-						<img class="w-6 h-5" src="/public/images/icon-email.svg" alt="" />
+						<img class="w-5 h-4" src="/public/images/icon-email.svg" alt="" />
 						<a href=""> example@huddle.com</a>
 					</div>
+				</section>
+				<section>
+					<SocialPill href="">
+						<FacebookIcon class="size-6 md:size-6" />
+						<InstagramIcon class="size-6 md:size-6" />
+						<TwitterIcon class="size-6 md:size-6" />
+					</SocialPill>
 				</section>
 			</div>
 		</footer>
