@@ -9,11 +9,15 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 
 <Layout title="LP with curved sections">
 	<main>
-		<h1 class="font-heading text-xl text-n-very-dark-cyan px-14 pt-32">
+		<h1
+			class="font-heading text-xl text-n-very-dark-cyan px-14 pt-32 md:text-2xl"
+		>
 			Build The Community Your Fans Will Love
 		</h1>
 
-		<p class="text-xs text-wrap font-medium px-14 py-5">
+		<p
+			class="text-xs text-wrap font-medium px-14 py-5 text-n-very-dark-cyan md:px-48"
+		>
 			Huddle re-imagines the way we build communities. You have a voice, but so
 			does your audience. Create connections with your users as you engage in
 			genuine discussion.
@@ -27,67 +31,91 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 			alt="screen-mockups "
 		/>
 
-		<div class="flex flex-col text-center mt-[7rem]">
-			<div class="text-left pb-3 ml-[6.5rem]">
-				<img
-					class="w-auto h-5"
-					src="/public/images/icon-communities.svg"
-					alt=""
-				/>
+		<section class="md:flex md:justify-around">
+			<div class="flex flex-col text-center mt-[7rem] md:mt-0">
+				<div class="">
+					<img
+						class="w-auto h-4 px-28 md:px-1"
+						src="/public/images/icon-communities.svg"
+						alt=""
+					/>
+					<h2 class="text-6xl font-bold text-n-very-dark-cyan">1.4k+</h2>
+					<p class="text-sm font-semibold text-n-very-dark-cyan/50">
+						Communities Formed
+					</p>
+				</div>
 			</div>
-			<h2 class="text-6xl font-bold text-n-very-dark-cyan">1.4k+</h2>
-			<p class="text-sm font-semibold text-n-very-dark-cyan/50">
-				Communities Formed
-			</p>
-		</div>
 
-		<div class="flex flex-col text-center mt-[7rem]">
-			<div class="text-left pb-3 ml-[6.5rem]">
-				<img class="w-auto h-5" src="/public/images/icon-messages.svg" alt="" />
+			<div class="flex flex-col text-center mt-[7rem] md:mt-0">
+				<div class="px-10">
+					<img
+						class="w-auto h-4 px-16 md:px-1"
+						src="/public/images/icon-messages.svg"
+						alt=""
+					/>
+					<h2 class="text-6xl font-bold text-n-very-dark-cyan">2.7m+</h2>
+					<p class="text-sm font-semibold text-n-very-dark-cyan/50 w-14
+					mx-auto">
+						Messages Sent
+					</p>
+				</div>
 			</div>
-			<h2 class="text-6xl font-bold text-n-very-dark-cyan">2.7m+</h2>
-			<p class="text-sm font-semibold text-n-very-dark-cyan/50">Messages</p>
-			<p class="text-sm font-semibold text-n-very-dark-cyan/50">Sent</p>
-		</div>
+		</section>
 
 		<section>
 			<img
-				class="w-[100%] h-auto"
+				class="w-[100%] h-auto md:hidden"
 				src="/public/images/bg-section-top-mobile-1.svg"
 				alt=""
 			/>
-			<div class="bg-n-very-pale-blue pb-12">
+			<img
+				class="w-[100%] h-auto hidden md:block"
+				src="/public/images/bg-section-top-desktop-1.svg"
+				alt=""
+			/>
+			<div class="bg-n-very-pale-blue pb-12 flex flex-col">
 				<img
 					class="bg-n-very-pale-blue w-auto h-auto mx-auto px-12 pt-28"
 					src="/public/images/illustration-grow-together.svg"
 					alt=""
 				/>
-				<h2 class="font-heading text-xl px-14 pt-32">Grow Together</h2>
 
-				<p class="text-xs text-wrap font-medium px-14 py-5">
-					Generate meaningful discussions with your audience and build a strong,
-					loyal community. Think of the insightful conversations you miss out on
-					with a feedback form.
-				</p>
+				<div>
+					<h2 class="font-heading text-xl px-14 pt-32">Grow Together</h2>
+
+					<p class="text-xs text-wrap font-medium px-14 py-5">
+						Generate meaningful discussions with your audience and build a
+						strong, loyal community. Think of the insightful conversations you
+						miss out on with a feedback form.
+					</p>
+				</div>
 			</div>
 			<img
-				class="w-[100%] h-auto"
+				class="w-[100%] h-auto md:hidden"
 				src="/public/images/bg-section-bottom-mobile-1.svg"
 				alt=""
 			/>
-		</section>
-		<section>
 			<img
-				class="w-auto h-auto mx-auto px-12 pt-28"
-				src="/public/images/illustration-flowing-conversation.svg"
+				class="w-[100%] h-auto hidden md:block"
+				src="/public/images/bg-section-bottom-desktop-1.svg"
 				alt=""
 			/>
-			<h2 class="font-heading text-xl px-14 pt-32">Flowing Conversations</h2>
+		</section>
 
-			<p class="text-xs font-medium px-12 py-5">
-				You wouldn't paginate a conversation in real life, so why do it online?
-				Our threads have just-in-time loading for a more natural flow.
-			</p>
+		<section>
+			<div class="flex flex-col">
+				<img
+					class="w-auto h-auto mx-auto px-12 pt-28"
+					src="/public/images/illustration-flowing-conversation.svg"
+					alt=""
+				/>
+				<h2 class="font-heading text-xl px-14 pt-32">Flowing Conversations</h2>
+
+				<p class="text-xs font-medium px-12 py-5">
+					You wouldn't paginate a conversation in real life, so why do it
+					online? Our threads have just-in-time loading for a more natural flow.
+				</p>
+			</div>
 		</section>
 
 		<section>
@@ -96,19 +124,21 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 				src="/public/images/bg-section-top-mobile-2.svg"
 				alt=""
 			/>
-			<div class="bg-n-very-pale-blue pb-12">
+			<div class="bg-n-very-pale-blue pb-12 flex flex-col">
 				<img
 					class="bg-n-very-pale-blue w-auto h-auto mx-auto px-12 pt-28"
 					src="/public/images/illustration-your-users.svg"
 					alt=""
 				/>
-				<h2 class="font-heading text-xl px-14 pt-32">Your Users</h2>
+				<div>
+					<h2 class="font-heading text-xl px-14 pt-32">Your Users</h2>
 
-				<p class="text-xs font-medium px-12 py-5">
-					It takes no time at all to integrate Huddle with your app's
-					authentication solution. This means, once signed in to your app, your
-					users can start chatting immediately.
-				</p>
+					<p class="text-xs font-medium px-12 py-5">
+						It takes no time at all to integrate Huddle with your app's
+						authentication solution. This means, once signed in to your app,
+						your users can start chatting immediately.
+					</p>
+				</div>
 			</div>
 			<img
 				class="w-[100%] h-auto"
@@ -129,7 +159,7 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 				src="/public/images/bg-footer-top-mobile.svg"
 				alt=""
 			/>
-			<div class="bg-n-very-dark-cyan">
+			<div class="bg-n-very-dark-cyan flex flex-col">
 				<section>
 					<h2
 						class="uppercase text-xl font-semibold px-10 text-n-very-pale-blue pt-20 text-left"
@@ -144,10 +174,19 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 					</p>
 					<form>
 						<div class="pl-10 pr-8 h-12">
-							<input class="w-full h-14 rounded-md" type="email" />
+							<input
+								class="w-full h-14 rounded-md text-sm"
+								type="email"
+								id="email"
+								pattern=".+@example\.com"
+								size="30"
+								required
+							/>
 						</div>
 						<div class="mt-7 text-right px-8">
 							<a
+								type="submit"
+								href="#"
 								class="bg-pink px-12 py-3 text-sm font-semibold text-n-very-pale-blue rounded-md shadow-xl"
 							>
 								Subscribe
@@ -167,27 +206,36 @@ import TwitterIcon from "@/icons/TwitterIcon.astro";
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
 						nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
 					</p>
-				</section>
-				<section
-					class="px-10 mt-7 pb-10 flex flex-col gap-7 text-n-very-pale-blue text-sm font-medium"
-				>
-					<div class="flex gap-6 items-center content-center">
-						<img class="size-4" src="/public/images/icon-phone.svg" alt="" />
-						<a href="">Phone: +1-543-123-4567</a>
+
+					<div
+						class="mt-7 pb-10 flex flex-col gap-7 text-n-very-pale-blue text-sm font-medium"
+					>
+						<div class="flex gap-6 items-center content-center">
+							<img class="size-4" src="/public/images/icon-phone.svg" alt="" />
+							<a href="">Phone: +1-543-123-4567</a>
+						</div>
+						<div class="flex gap-6 items-center content-center">
+							<img class="w-5 h-4" src="/public/images/icon-email.svg" alt="" />
+							<a href=""> example@huddle.com</a>
+						</div>
 					</div>
-					<div class="flex gap-6 items-center content-center">
-						<img class="w-5 h-4" src="/public/images/icon-email.svg" alt="" />
-						<a href=""> example@huddle.com</a>
-					</div>
-				</section>
-				<section>
-					<SocialPill href="">
-						<FacebookIcon class="size-6 md:size-6" />
-						<InstagramIcon class="size-6 md:size-6" />
-						<TwitterIcon class="size-6 md:size-6" />
-					</SocialPill>
 				</section>
 			</div>
+			<section class="bg-n-very-dark-cyan">
+				<SocialPill href="">
+					<FacebookIcon class="size-6 md:size-6" />
+					<InstagramIcon class="size-6 md:size-6" />
+					<TwitterIcon class="size-6 md:size-6" />
+				</SocialPill>
+			</section>
 		</footer>
+		<p class="attribution font-normal text-sm px-2">
+			Challenge by <a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank">Frontend Mentor</a
+			>. Coded by <a href="https://github.com/justcoddev" target="_blank"
+				><strong>justcoddev</strong></a
+			>.
+		</p>
 	</main>
 </Layout>
